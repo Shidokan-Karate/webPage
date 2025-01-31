@@ -49,47 +49,34 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Home',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Home Page', href: '#' },
+        { text: 'Contacts', href: '#' },
+      ]
+    },
+    {
+      title: 'Championship',
+      links: [
+        { text: 'Participants', href: '#' },
+        { text: 'Shedule', href: '#' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'For Visitors',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Accomodation', href: '#' },
+        { text: 'Arena', href: '#' },
+        { text: 'Transport', href: '#' },
+        { text: 'Leasure Time', href: '#' },
+        { text: 'FAQ', href: '#' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Sponsors',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'List of Sponsors', href: '#' },
+        { text: 'Become a partner', href: '#' },
       ],
     },
   ],
