@@ -15,23 +15,23 @@ export const headerData = {
       links: [
         {
           text: 'Accomodation for Participants',
-          href: getPermalink('/landing/lead-generation'),
+          href: getPermalink('#'),
         },
         {
           text: 'Arena',
-          href: getPermalink('/landing/sales'),
+          href: getPermalink('#'),
         },
         {
           text: 'Transport',
-          href: getPermalink('/landing/click-through'),
+          href: getPermalink('#'),
         },
         {
           text: 'Sightseeings, leasure',
-          href: getPermalink('/landing/product'),
+          href: getPermalink('#'),
         },
         {
           text: 'FAQ',
-          href: getPermalink('/landing/pre-launch'),
+          href: getPermalink('/#'),
         },
       ],
     },
