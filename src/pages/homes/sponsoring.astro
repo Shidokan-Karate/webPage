@@ -1,0 +1,148 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Sponsors from '~/components/widgets/Sponsors.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Sponsors Landing Page',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    image={{ src: '~/assets/images/Become-a-Sponsor.jpg', alt: 'AstroWind Hero Image' }}
+    tagline=""
+    actions={[
+      
+      { text: 'Learn more', href: '#features' },
+    ]}
+  >
+    <Fragment slot="title">
+      Become <span class="hidden sm:inline">a part of a distinguished historic sports</span> event <span
+        class="text-accent dark:text-white highlight"><br>2025 Shidokan Karate European Championship</span
+      > 
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      The event would take place on <span class="font-semibold">March 21 – 23 in Vilnius.</span> This is not only a significant event for Lithuania but also a unique opportunity for your brand to gain international visibility. This prestigious championship will bring together over 60 athletes from 11 countries, attracting thousands of sports enthusiasts and spectators from Lithuania and abroad.
+      As our sponsor, you will have the unique opportunity to contribute to making history and gain recognition within the global sports community. 
+     
+    </Fragment>
+  </Hero>
+
+  <Features
+    id="features"
+    title="Why to be the sponsor?"
+    subtitle=""
+    columns={2}
+    items={[
+      {
+        title: 'Outreach',
+        description:
+          'Your name and logo will appear on event promotional materials, television broadcasts, and social media content',
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'Visibility',
+        description: 'You will have the opportunity to set up your promotional stands, banners, or other branding at the event venue, directly reaching participants and attendees',
+        icon: 'tabler:picture-in-picture',
+      },
+      {
+        title: 'Acknowledgment',
+        description:
+          'You will be acknowledged during the event, highlighting your contribution to this exceptional sporting occasion',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Contribution',
+        description: 'You will play a role in supporting a tradition-rich event that promotes culture and showcases Lithuania on the international stage',
+        icon: 'tabler:sun',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Contact us fo more information"
+    subtitle="We’re here to help and answer any question you might have."
+    columns={3}
+    items={[
+      {
+        title: 'Phone',
+        icon: 'tabler:phone',
+        callToAction: {
+          target: '_blank',
+          text: '+370 671 09733',
+          href: '/',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Email',
+        icon: 'tabler:mail',
+        callToAction: {
+          target: '_blank',
+          text: 'mku@shidokaneurope.lt',
+          href: '/',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Chat on Facebook',
+        icon: 'tabler:message-circle',
+        callToAction: {
+          target: '_blank',
+          text: 'Shidokan Lithuania',
+          href: 'https://www.facebook.com/savigynosmenucentras?locale=en_EN',
+          variant: 'link',
+        },
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <Sponsors
+    title="Sponsors"
+    icons={[]}
+    images={[
+  {
+    src: '~/assets/images/SD_logo_resized.png',
+    alt: 'Spaudos Departamentas',
+  },
+  {
+    src: '~/assets/images/vecticum_resized.png',
+    alt: 'Vecticum',
+  },
+  {
+    src: '~/assets/images/atvena_resized.png',
+    alt: 'Atvena',
+  },
+  {
+    src: '~/assets/images/LPC_Logo_inverted_resized.png',
+    alt: 'LPC',
+  },
+  {
+    src: '~/assets/images/vilnius_s_resized.png',
+    alt: 'Vilnius_s',
+  },  
+]}
+/>
+</Layout>

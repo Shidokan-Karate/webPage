@@ -37,7 +37,7 @@ export const headerData = {
     },
     {
       text: 'Sponsors',
-      href: '#',
+      href: getPermalink ('/homes/sponsoring'),
     },    
     {
       text: 'Contacts',

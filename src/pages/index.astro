@@ -12,6 +12,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Brands from '~/components/widgets/Brands.astro';
+import Sponsors from '~/components/widgets/Sponsors.astro';
 
 const metadata = {
   title: 'Shidokan Karate European Championship 2025',
@@ -32,9 +33,10 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Vilnius,</span> Lithuania </span
+        <span class="font-semibold">Vilnius,</span> Lithuania <br></span>
+        <span class="font-semibold">March</span> 22 </span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Vilnius, Lithuania</span>
       
     </Fragment>
   </Hero>
@@ -42,9 +44,9 @@ const metadata = {
   <Stats
     title="In Numbers"
     stats={[
-      { title: 'Countries', amount: '12' },
-      { title: 'Fighters', amount: '>60' },
-      { title: 'Guests', amount: '>150' },
+      { title: 'Countries', amount: '11' },
+      { title: 'Athletes', amount: '>60' },
+      { title: 'International Guests', amount: '>150' },
     ]}
      />
 
@@ -55,11 +57,11 @@ const metadata = {
   icons={[]}
   images={[
     {
-      src: '~/assets/images/france.jpg',
+      src: '~/assets/images/france.png',
       alt: 'France',
     },
     {
-      src: '~/assets/images/germany.jpg',
+      src: '~/assets/images/germany.png',
       alt: 'Germany',
     },
     {
@@ -67,7 +69,7 @@ const metadata = {
       alt: 'Lithuania',
     },
     {
-      src: '~/assets/images/czech_republic.jpg',
+      src: '~/assets/images/czech.png',
       alt: 'Czech republik',
     },
     {
@@ -79,7 +81,7 @@ const metadata = {
       alt: 'Latvia',
     },
     {
-      src: '~/assets/images/spain.jpg',
+      src: '~/assets/images/spain2.png',
       alt: 'Spain',
     },
     {
@@ -95,13 +97,40 @@ const metadata = {
       alt: 'Poland',
     },
     {
-      src: '~/assets/images/italy.jpg',
-      alt: 'Italy',
+      src: '~/assets/images/ukraine.png',
+      alt: 'Ukraine',
     },
   ]}
 />
 
-  <!-- Features Widget *************** -->
+<Sponsors
+title="Sponsors"
+icons={[]}
+images={[
+  {
+    src: '~/assets/images/SD_logo_resized.png',
+    alt: 'Spaudos Departamentas',
+  },
+  {
+    src: '~/assets/images/vecticum_resized.png',
+    alt: 'Vecticum',
+  },
+  {
+    src: '~/assets/images/atvena_resized.png',
+    alt: 'Atvena',
+  },
+  {
+    src: '~/assets/images/LPC_Logo_inverted_resized.png',
+    alt: 'LPC',
+  },
+  {
+    src: '~/assets/images/vilnius_s_resized.png',
+    alt: 'Vilnius_s',
+  },  
+]}
+/>
+
+<!-- Features Widget *************** -->
 
   
 
@@ -114,11 +143,11 @@ const metadata = {
   <CallToAction
   actions={[
     {
-      variant: 'link',
-      text: 'Contacts',
-      href: 'https://shidokaneurope2025.eu',
+      variant: 'mailto',
+      text: 'mku@shidokankarate.lt',
+      href: 'mailto:mku@shidokankarate.lt', body: 'test',
       target: '_blank',
-      icon: 'tabler:link',
+      icon: 'tabler:mail',
     },
   ]}
 >
@@ -127,7 +156,7 @@ const metadata = {
   </Fragment>
 
   <Fragment slot="subtitle">
-    Feel free to contact us! <br class="hidden md:inline" />
+    Have a question? Contact us! <br class="hidden md:inline" />
   </Fragment>
 </CallToAction>
 </Layout>
