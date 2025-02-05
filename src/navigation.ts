@@ -4,34 +4,34 @@ export const headerData = {
   links: [
     {
       text: 'Home',
-      href: '#',
+      href: '/',
     },
     {
       text: 'Championship',
-      href: '#',
+      href: '/',
     },
     {
       text: 'For Visitors',
       links: [
         {
           text: 'Accomodation for Participants',
-          href: getPermalink('#'),
+          href: getPermalink('/'),
         },
         {
           text: 'Arena',
-          href: getPermalink('#'),
+          href: getPermalink('/'),
         },
         {
           text: 'Transport',
-          href: getPermalink('#'),
+          href: getPermalink('/'),
         },
         {
           text: 'Sightseeings, leasure',
-          href: getPermalink('#'),
+          href: getPermalink('/'),
         },
         {
           text: 'FAQ',
-          href: getPermalink('/#'),
+          href: getPermalink('/'),
         },
       ],
     },
@@ -41,7 +41,7 @@ export const headerData = {
     },    
     {
       text: 'Contacts',
-      href: '#',
+      href: '/',
     },
   ],
 };
@@ -51,32 +51,32 @@ export const footerData = {
     {
       title: 'Home',
       links: [
-        { text: 'Home Page', href: '#' },
-        { text: 'Contacts', href: '#' },
+        { text: 'Home Page', href: '/' },
+        { text: 'Contacts', href: '/' },
       ]
     },
     {
       title: 'Championship',
       links: [
-        { text: 'Participants', href: '#' },
-        { text: 'Shedule', href: '#' },
+        { text: 'Participants', href: '/' },
+        { text: 'Shedule', href: '/' },
       ],
     },
     {
       title: 'For Visitors',
       links: [
-        { text: 'Accomodation', href: '#' },
-        { text: 'Arena', href: '#' },
-        { text: 'Transport', href: '#' },
-        { text: 'Leasure Time', href: '#' },
-        { text: 'FAQ', href: '#' },
+        { text: 'Accomodation', href: '/' },
+        { text: 'Arena', href: '/' },
+        { text: 'Transport', href: '/' },
+        { text: 'Leasure Time', href: '/' },
+        { text: 'FAQ', href: '/' },
       ],
     },
     {
       title: 'Sponsors',
       links: [
-        { text: 'List of Sponsors', href: '#' },
-        { text: 'Become a partner', href: '#' },
+        { text: 'List of Sponsors', href: '/homes/sponsoring' },
+        { text: 'Become a partner', href: '/homes/sponsoring' },
       ],
     },
   ],
