@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
+import getPermalink from '~/utils/permalinks';
 import Header from '~/components/widgets/Header.astro';
 
 import Hero2 from '~/components/widgets/Hero2.astro';
@@ -21,41 +21,21 @@ const googlePlayImg = '~/assets/images/google-play.png';
 const googlePlayDownloadLink = 'https://github.com/onwidget/astrowind';
 
 const metadata = {
-  title: 'Mobile App Homepage',
+  title: 'Sightseeings an leasure',
 };
 ---
 
 <Layout metadata={metadata}>
-  <Fragment slot="announcement"></Fragment>
-  <Fragment slot="header">
-    <Header
-      position="left"
-      links={[
-        { text: 'Services', href: '#' },
-        { text: 'Features', href: '#' },
-        { text: 'About', href: '#' },
-      ]}
-      actions={[
-        {
-          text: 'Download',
-          href: '#download',
-        },
-      ]}
-      isSticky
-      showToggleTheme
-    />
-  </Fragment>
 
    
   <!-- Features3 Widget ************** -->
 
   <Features3
     id="features"
-    title="Event location and Accomodation for participans"
-    subtitle="The championship will be hosted by the Vilnius <b> Polish Cultural House</b>, a unique complex that offers accommodation, event hosting facilities, catering, and recreational services."
-        
+    title="Sightseeings an leasure"
+    subtitle="Vilnius, the capital of Lithuania, is a charming city known for its beautiful Baroque Old Town, a UNESCO World Heritage site. Visitors can explore the iconic Gediminas Tower, which offers stunning panoramic views of the city. The bohemian Užupis district, often compared to Montmartre in Paris, is a must-visit with its artistic vibe and quirky constitution. St. Anne’s Church, a Gothic masterpiece, is another highlight, along with the vibrant food scene featuring traditional Lithuanian dishes like cepelinai. Whether strolling through medieval streets or enjoying modern cafes, Vilnius offers a perfect blend of history, culture, and creativity."
     image={{
-      src: '~/assets/images/dkp.webp',
+      src: '~/assets/images/vilnius-oldtown.jpg',
       alt: 'DKP',
     }}
   />
@@ -66,20 +46,17 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'Naugarduko g. 76, Vilnius, Lietuva LT - 03202',
-        icon: 'tabler:map',
+        title: 'shortcut icon',
+        icon: 'tabler:square-rounded-arrow-right',
+      
       },
       {
         title: '+370 5 233 3663',
-        icon: 'tabler:carousel-horizontal',
+        icon: 'tabler:square-rounded-arrow-right',
       },
       {
         title: 'https://www.polskidom.lt/',
         icon: 'tabler:square-rounded-arrow-right',
-      },
-      {
-        title: 'info@polskidom.lt',
-        icon: 'tabler:mail',
       },
     ]}
     image={{
@@ -88,6 +65,6 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Location</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Useful links visiting <b>Vilnius</b></h3>
     </Fragment>
   </Content>

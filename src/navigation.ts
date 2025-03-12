@@ -14,12 +14,8 @@ export const headerData = {
       text: 'For Visitors',
       links: [
         {
-          text: 'Accomodation for Participants',
-          href: getPermalink('/'),
-        },
-        {
-          text: 'Arena',
-          href: getPermalink('/'),
+          text: 'Location',
+          href: getPermalink('homes/accommodation'),
         },
         {
           text: 'Transport',
