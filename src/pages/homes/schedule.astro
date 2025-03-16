@@ -1,0 +1,122 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import { getPermalink } from '~/utils/permalinks';
+
+const metadata = {
+  title: 'Personal Homepage Demo',
+};
+---
+
+<Layout metadata={metadata}>
+ 
+  <!-- Hero2 Widget ******************* -->
+
+  <HeroText
+    id="hero"
+    title="Event Schedule"
+          >
+    <Fragment slot="subtitle">
+      Shidokan Karate European Championship 2025
+    </Fragment>
+  
+  <!-- Content Widget **************** -->
+</HeroText>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="resume"
+    title="Friday, March 21<sup>st</sup>"
+    items={[
+      {
+        title:
+          '18:00 - 20:00 <br /> <span class="font-normal">Weigh-in, medical document and health check</span> <br /> <span class="text-sm font-normal">Location - hall of the Hotel in Polish Culture House</span>',
+        icon: 'tabler:chevron-right',
+      },
+      {
+        title:
+          '21:00 <br /> <span class="font-normal">Meeting for referees, Shihans and trainees</span> <br /> <span class="text-sm font-normal">',
+        icon: 'tabler:chevron-right',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+  <!-- Steps Widget ****************** -->
+  <Steps
+  id="resume"
+  title="Saturday, March 22<sup>nd</sup>"
+  items={[
+    {
+      title:
+        '07:00 - 08:30 <br /> <span class="font-normal">Breakfast</span> <br /> <span class="text-sm font-normal">',
+      icon: 'tabler:chevron-right',
+    },
+    {
+      title:
+        '09:00 <br /> <span class="font-normal">Beginning of the competition for youth fighters</span> <br /> <span class="text-sm font-normal">',
+      icon: 'tabler:chevron-right',
+    },
+    {
+      title:
+        '11:30-12:00 <br />	<span class="font-normal">Award ceremony for youth fighters <br /> <span class="font-normal">',
+      icon: 'tabler:chevron-right',
+    },
+    {
+      title:
+        '12:00-13:00 <br />	<span class="font-normal">Official opening ceremony of<br /> Shidokan Karate European Championship 2025 <br /> <span class="font-normal">',
+      icon: 'tabler:artboard',
+    },
+    {
+      title:
+        '13:00-20:00 <br />	<span class="font-normal">Competitions for junior and adult fighters <br /> <span class="font-normal">',
+      icon: 'tabler:chevron-right',
+    },
+    {
+      title:
+        '20:00-20:15 <br />	<span class="font-normal">Break<br /> <span class="font-normal">',
+      icon: 'tabler:chevron-right',
+    },
+    {
+      title:
+        '20:15<br />	<span class="font-normal">Award ceremony<br /> <span class="font-normal">',
+      icon: 'tabler:artboard',
+    },
+    {
+      title:
+        '21:30 <br /> <span class="font-normal">Cocktail evening</span> <br /> <span class="text-sm font-normal">Location - hall of the Hotel in Polish Culture House</span>',
+      icon: 'tabler:rocket',
+    },
+  ]}
+  classes={{ container: 'max-w-3xl' }}
+/>
+<Steps
+id="resume"
+title="Sunday, March 23<sup>st</sup>"
+items={[
+  {
+    title:
+      '07:00 - 10:00 <br /> <span class="font-normal">Breakfast, leaving to the airport according to the flight schedule. </span> <br /> <span class="text-sm font-normal">More information about shuttle from the hotel to the airport <a href=transfer target="_blank"><b>here</b></a></span>',
+    icon: 'tabler:chevron-right',
+  },
+]}
+classes={{ container: 'max-w-3xl' }}
+/>
+
+
+  <!-- Features3 Widget ************** -->
+
+  
+  <!-- BlogLatestPost Widget **************** -->
+
+  
+</Layout>

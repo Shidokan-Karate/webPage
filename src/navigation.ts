@@ -8,7 +8,7 @@ export const headerData = {
     },
     {
       text: 'Championship',
-      href: '/',
+      href: getPermalink('homes/schedule'),
     },
     {
       text: 'For Visitors',
@@ -55,16 +55,15 @@ export const footerData = {
       title: 'Championship',
       links: [
         { text: 'Participants', href: '/' },
-        { text: 'Shedule', href: '/' },
+        { text: 'Shedule', href: getPermalink ('/homes/schedule') },
       ],
     },
     {
       title: 'For Visitors',
       links: [
-        { text: 'Accomodation', href: '/' },
-        { text: 'Arena', href: '/' },
-        { text: 'Transport', href: '/' },
-        { text: 'Leasure Time', href: '/' },
+        { text: 'Location', href: getPermalink('homes/accommodation')},
+        { text: 'Airport Transfer', href: getPermalink('homes/transfer')},
+        { text: 'Leasure Time', href: getPermalink('homes/sightseeings') },
         { text: 'FAQ', href: '/' },
       ],
     },
