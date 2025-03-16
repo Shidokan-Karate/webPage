@@ -2,7 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import getPermalink from '~/utils/permalinks';
 import Header from '~/components/widgets/Header.astro';
-
+import Features2 from '~/components/widgets/Features2.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
@@ -40,27 +40,51 @@ const metadata = {
     }}
   />
 
+  <Features2
+  title="How to get to the oldtown?"
+  subtitle="It's simple! You can walk from the hotel, and it will take about 20 minutes. Turn down Naugarduko Street and keep walking straight. As you go down, you will reach Pylimo Street, which marks the boundary between the New Town and the Old Town districts. Continue straight or turn left. After passing the MO Museum, turn right towards Trakų Street."
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Features2>
+
   <!-- Content Widget **************** -->
 
   <Content
     isReversed
     items={[
       {
-        title: 'shortcut icon',
         icon: 'tabler:square-rounded-arrow-right',
+        callToAction: {
+          target: '_blank',
+          text: 'Go Vilnius',
+          href: 'https://www.govilnius.lt/visit-vilnius',
+          variant: 'link',
+        }
       
       },
       {
-        title: '+370 5 233 3663',
         icon: 'tabler:square-rounded-arrow-right',
+        callToAction: {
+          target: '_blank',
+          text: 'Trip Advisor',
+          href: 'https://www.tripadvisor.com/Tourism-g274951-Vilnius_Vilnius_County-Vacations.html',
+          variant: 'link',
+        }
       },
       {
-        title: 'https://www.polskidom.lt/',
         icon: 'tabler:square-rounded-arrow-right',
+        callToAction: {
+          target: '_blank',
+          text: 'Lonely Planet',
+          href: 'https://www.lonelyplanet.com/articles/first-time-guide-to-vilnius',
+          variant: 'link',
+        }
       },
     ]}
     image={{
-      src: '~/assets/images/dkp_address2.png',
+      src: '~/assets/images/VilniusStock_.jpeg',
       alt: 'DKP Address',
     }}
   >

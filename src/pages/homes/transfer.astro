@@ -1,0 +1,97 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Startup Landing Page',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <HeroText
+   >
+    <Fragment slot="title">
+      Transfer for a Guests of  <span class="hidden sm:inline"></span> <span
+        class="text-accent dark:text-white highlight">Shidokan Karate European Championship 2025</span> 
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Please be informed, that for those of You, who will come to Lithuania by plane, <span class="font-semibold">transfer from Vilnius airport to hotel and from hotel to Vilnius airport </span> will be provided.
+    </Fragment>
+  </HeroText>
+
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    
+    items={[
+      {
+        title: 'Arrival',
+        description:
+          'Upon arrival to Vilnius airport You will be met by a person with <b>„Shidokan Karate European Championship 2025“</b> sign. ',
+      },
+      {
+        title: 'Departure',
+        description:
+          'Transfer from hotel on 23rd of March to Vilnius airport will be <b>2 hours 30 minutes</b> prior Your departure time.',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Transfer Service"
+    subtitle="If You have any questions regarding transfer from/to Vilnius airport, or would like to clarify or provide additional information about Your arrival, please contact transer-person <b>Artiom Valujev</b>"
+    columns={4}
+    items={[
+      {
+        title: '',
+      },
+      {
+        title: 'Phone',
+        icon: 'tabler:phone',
+        callToAction: {
+          target: '_blank',
+          text: '+370 685 16777',
+          href: 'homes/transfer',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Email',
+        icon: 'tabler:mail',
+        callToAction: {
+          target: '_blank',
+          text: 'artiomvalujev@gmail.com',
+          href: 'artiomvalujev@gmail.com ',
+          variant: 'link',
+        },
+      },
+      
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  
+</Layout>

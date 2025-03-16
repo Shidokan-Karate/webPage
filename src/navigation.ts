@@ -18,12 +18,12 @@ export const headerData = {
           href: getPermalink('homes/accommodation'),
         },
         {
-          text: 'Transport',
-          href: getPermalink('/'),
+          text: 'Airport Transfer',
+          href: getPermalink('homes/transfer'),
         },
         {
           text: 'Sightseeings, leasure',
-          href: getPermalink('/'),
+          href: getPermalink('homes/sightseeings'),
         },
         {
           text: 'FAQ',
