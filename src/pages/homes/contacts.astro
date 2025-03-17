@@ -1,0 +1,79 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Startup Landing Page',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+
+  <!-- Features2 Widget ************** -->
+
+  <Features
+    id="features"
+    title="Contacts!"
+    subtitle="Do you have any questions about the event or need assistance? Our support team is happy to help!"
+    columns={3}
+    items={[
+      {
+        title: 'Event administration',
+        description:
+          'and press representative <br> +37067109733',
+        icon: 'tabler:phone',
+      },
+      {
+        title: 'Transfer from(to) airport ',
+        description:
+          '+37068516777',
+        icon: 'tabler:car',
+      },
+      {
+        title: 'Volunteer assistance',
+        description:
+          '+37061001292',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Medical help, consultation ',
+        description: '+37065085135',
+        icon: 'tabler:vaccine',
+      },
+      {
+        title: 'Championship supervision',
+        description: 'tbd',
+        icon: 'tabler:tie',
+      },
+      {
+        title: 'Technical questions',
+        description: '+37060479205',
+        icon: 'tabler:plug-connected',
+      },
+    ]}
+  />
+
+ 
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    
+  >
+    <Fragment slot="subtitle">
+      During the event, feel free to approach the volunteers with any questions. They will be easy to spot in bright, clearly marked T-shirts.
+    </Fragment>
+  </CallToAction>
+</Layout>

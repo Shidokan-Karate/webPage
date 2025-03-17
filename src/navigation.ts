@@ -37,7 +37,7 @@ export const headerData = {
     },    
     {
       text: 'Contacts',
-      href: '/',
+      href: getPermalink ('homes/contacts'),
     },
   ],
 };
@@ -48,7 +48,7 @@ export const footerData = {
       title: 'Home',
       links: [
         { text: 'Home Page', href: '/' },
-        { text: 'Contacts', href: '/' },
+        { text: 'Contacts', href: getPermalink('homes/contacts')},
       ]
     },
     {
@@ -64,21 +64,16 @@ export const footerData = {
         { text: 'Location', href: getPermalink('homes/accommodation')},
         { text: 'Airport Transfer', href: getPermalink('homes/transfer')},
         { text: 'Leasure Time', href: getPermalink('homes/sightseeings') },
-        { text: 'FAQ', href: '/' },
-      ],
+        ],
     },
     {
       title: 'Sponsors',
       links: [
-        { text: 'List of Sponsors', href: '/homes/sponsoring' },
-        { text: 'Become a partner', href: '/homes/sponsoring' },
+        { text: 'Sponsore zone', href: '/homes/sponsoring' },
       ],
     },
   ],
-  secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
-  ],
+  
   socialLinks: [
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=100063605214508&locale=en_EN' },
   ],
