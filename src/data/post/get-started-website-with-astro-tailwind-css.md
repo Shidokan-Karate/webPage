@@ -1,7 +1,7 @@
 ---
 publishDate: 2023-08-12T00:00:00Z
 author: John Smith
-title: Get started with AstroWind to create a website using Astro and Tailwind CSS
+title: Get started with AstroWind to create a website
 excerpt: Start your web journey with AstroWind – harness Astro and Tailwind CSS for a stunning site. Explore our guide now.
 image: https://images.unsplash.com/photo-1516996087931-5ae405802f9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
 category: Tutorials
@@ -14,11 +14,16 @@ metadata:
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-## Nostra torquent consequat volutpat aliquet neque
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit proin, aenean litora volutpat urna egestas magnis arcu non, cras ut cursus et sed morbi lectus. Integer faucibus sagittis eu nunc urna aliquet a laoreet torquent, suspendisse penatibus nulla sollicitudin congue rutrum dictum. Ornare mi habitasse fermentum phasellus dui et morbi litora sodales dictum id erat, nibh purus class ligula aenean lectus venenatis euismod cras torquent ac. Senectus sagittis conubia hendrerit at egestas porta venenatis nisi metus gravida tempor, aenean facilisis nisl ante facilisi lacus integer hac iaculis purus. Scelerisque libero torquent egestas curae tellus viverra inceptos imperdiet urna, porta suspendisse interdum primis odio morbi tempor commodo dictumst, suscipit ornare habitasse semper feugiat cras quisque lobortis.
-
+## Nostra torque
+<p><br></p><table class="table table-bordered"><tbody><tr><td>asd</td><td>ad        image: {
+          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Sarah Hansen Image',}/td><td>ad</td><td>ad</td></tr><tr><td>gj</td><td>gj</td><td>ghj</td><td>gjgjgj</td></tr><tr><td>gjgj</td><td><br></td><td>gjgj</td><td>hgjghj</td></tr><tr><td>gjhgj</td><td>gjgjg</td><td><br></td><td><br></td></tr></tbody></table><p><br></p>
+  
 Iaculis arcu commodo dis proin vitae himenaeos, ante tristique potenti magna ligula, sagittis libero fermentum ullamcorper sociis. Sem eros non arcu natoque fringilla lacus vestibulum lacinia integer mus viverra in proin, sagittis fusce tortor erat enim rutrum vulputate curae laoreet class diam. Inceptos convallis ac nisi natoque nam quisque magnis ut nullam fringilla curae, luctus lacus purus habitant erat magna molestie class habitasse metus, nibh lobortis tortor curabitur neque phasellus feugiat netus morbi parturient. Neque malesuada mauris justo himenaeos pharetra, ullamcorper enim ligula a nulla consequat, eget vivamus velit ridiculus.
+image: {
+          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Sarah Hansen Image',
+        },
 
 ## Praesent tellus ad sapien erat or
 
